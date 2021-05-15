@@ -9,7 +9,7 @@ import java.util.Objects;
 public class Movie {
 
     @Id
-    private String Id;
+    private String id;
 
     private String movieName;
     private String movieType;
@@ -17,7 +17,7 @@ public class Movie {
     private Integer created_at;
 
     public Movie(final String id, final String movieName, final String movieType, final String principalActor, final Integer created_at) {
-        Id = id;
+        this.id = id;
         this.movieName = movieName;
         this.movieType = movieType;
         this.principalActor = principalActor;
@@ -25,11 +25,11 @@ public class Movie {
     }
 
     public String getId() {
-        return Id;
+        return id;
     }
 
     public void setId(final String id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getMovieName() {
@@ -69,19 +69,19 @@ public class Movie {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         final Movie movie = (Movie) o;
-        return Objects.equals(Id, movie.Id) && Objects.equals(movieName, movie.movieName) && Objects.equals(movieType,
+        return Objects.equals(id, movie.id) && Objects.equals(movieName, movie.movieName) && Objects.equals(movieType,
             movie.movieType) && Objects.equals(principalActor, movie.principalActor) && Objects.equals(created_at, movie.created_at);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(Id, movieName, movieType, principalActor, created_at);
+        return Objects.hash(id, movieName, movieType, principalActor, created_at);
     }
 
     @Override
     public String toString() {
         return "Movie{" +
-            "Id='" + Id + '\'' +
+            "Id='" + id + '\'' +
             ", movieName='" + movieName + '\'' +
             ", movieType='" + movieType + '\'' +
             ", principalActor='" + principalActor + '\'' +
