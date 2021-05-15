@@ -12,7 +12,8 @@ import reactor.core.publisher.Mono;
 
 import java.time.Duration;
 
-@RestController("/netflix")
+@RestController
+@RequestMapping("/netflix")
 public class MovieController {
 
     private MovieRepository movieRepository;
