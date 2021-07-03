@@ -7,6 +7,6 @@ Usando os conceitos de Subscribe, Flux e Mono dentro do Webflux do Spring.
 
 ## Expert
 
-| [<img src="ttps://user-images.githubusercontent.com/42419543/118342521-0e51d600-b4fa-11eb-9a5e-a50f678d79b0.jpeg" width="75px;"/>](https://github.com/anabneri) |
+| [<img src="https://avatars.githubusercontent.com/u/42419543?v=4" width="75px;"/>](https://github.com/anabneri) |
 | :-: |
 |[Ana Neri](https://github.com/anabneri)|
